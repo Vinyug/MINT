@@ -1,0 +1,67 @@
+:root {
+    /* debug */
+    --alphaColorForDebug: 1;
+    --gridImageForDebug: url('grid-16x16.png');
+
+    /* Wrapper */
+    --wrapper: 1120px;
+
+    /* Global colors */
+    --white: rgba(255, 255, 255, 1);
+    --dark: rgba(0, 0, 0, 1);
+    --yellow: rgba(255, 230, 0, 1);
+    --lightyellow: rgba(253, 226, 147, 1);
+
+    /* Fonts */
+    --fontPrimary: 'Montserrat-regular', sans-serif;
+    --fontSecondary: 'Montserrat-bold', sans-serif;
+}
+
+/* Global */
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    opacity: var(--alphaColorForDebug);
+    background-image: var(--gridImageForDebug);
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: var(--fontPrimary);
+    font-size: 1rem;
+    line-height: 1;
+}
+.wrapper {
+    margin-inline: max(2rem, 50% - var(--wrapper)/2);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.containerNav {
+    background-color: #b7dde8;
+    text-align: center;
+    height: 2rem;
+    margin: 2rem 0;
+}
+header {
+    background-color: #fbd8bc;
+    text-align: center;
+    height: 2rem;
+    margin: 2rem 0 1rem 0;
+}
+section {
+    background-color: #d8d8d8;
+    height: 2rem;
+    margin: 3rem 0;
+}
+footer {
+    background-color: #d3d4ac;
+    text-align: center;
+    height: 2rem;
+}
+
