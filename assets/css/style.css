@@ -406,11 +406,10 @@ header {
     gap: 2rem;
 }
 .cardBlog {
-    max-width: 464px;
+    max-width: 464 px;
 }
 .blogImage {
     position: relative;
-    max-width: 464px;
     margin: 0 auto;
 }
 .blogImage .overlay {
@@ -456,15 +455,17 @@ header {
 }
 @media screen and (min-width: 768px)
 {
-    .containerCardBlog {
-        flex-direction: row;
-    }
     .blog h2, .blog p {
         text-align: left;
         max-width: 592px;
     }
+    .containerCardBlog {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .cardBlog {
-        flex: 1 1 30%;
+        max-width: 250px;
     }
     .textBlog h4 {
         max-width: 250px;
@@ -474,16 +475,22 @@ header {
         overflow: hidden
     }
 }
-
+@media screen and (min-width: 992px)
+{
+    .cardBlog {
+        max-width: 280px;
+    }
+}
 /* Contact */
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem 0;
+    margin-top: 3rem;
 }
 .contact h2 {
     font-family: var(--fontSecondary);
+    align-self: start;
     text-align: left;
     font-size: 2.8rem;
     text-transform: uppercase;
@@ -492,12 +499,14 @@ header {
 }
 .contact p {
     max-width: 592px;
+    align-self: start;
     text-align: left;
     line-height: 1.25rem;
     padding-bottom: 1rem;
 }
 .contact h4 {
     font-family: var(--fontSecondary);
+    align-self: start;
     font-size: 1.5rem;
     font-weight: 800;
     padding-bottom: 2rem;
@@ -556,7 +565,7 @@ header {
 .maps {
     display: flex;
     max-width: 100%;
-    margin-top: 2rem;
+    margin: 2rem auto 0 auto;
 }
 .contactIcon {
     display: flex;
