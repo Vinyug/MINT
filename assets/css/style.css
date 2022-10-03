@@ -223,6 +223,7 @@ header {
 }
 .cardPortfolio .overlay {
     opacity: 0;
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,12 +241,16 @@ header {
     opacity: 1;
 }
 .cardPortfolio .overlay h3 {
+    color: var(--dark);
     font-family: var(--fontSecondary);
     font-size: 2rem;
     font-weight: 800;
     text-transform: uppercase;
 }
 .cardPortfolio .overlay p {
+    font-family: var(--fontSecondary);
+    color: var(--dark);
+    font-size: 1rem;
     font-weight: 500;
 }
 @media screen and (min-width: 768px)
